@@ -60,6 +60,10 @@ contract DSChiefApprovals is DSThing {
         require(hat == address(0) && approvals[address(0)] >= LAUNCH_THRESHOLD);
         live = true;
     }
+    
+    fuction hatt() external view returns(uint w) {
+        w = 1;
+    }
 
     function lock(uint wad)
         public
